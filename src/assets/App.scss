@@ -1,0 +1,50 @@
+$mainColor: #ef402b;
+$lightMainColor:#ef402b69;
+$secondaryColor: #d1d1d1;
+$successColor: #4caf50;
+$errorColor: #d32f2f;
+
+html,
+body {
+  margin: 0;
+}
+
+table {
+  border-radius: 4px;
+  box-shadow: 1px 1px 19px 0px $mainColor;
+  font-family: Arial;
+  text-align: center;
+  text-transform: capitalize;
+
+  thead {
+    background-color: $mainColor;
+    padding: 19px;
+    height: 30px;
+    color: #fff;
+    font-weight: 100;
+
+    tr {
+      th {
+        font-weight: 100 !important;
+        padding: 15px 30px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: $secondaryColor;
+      &:nth-child(even) {
+        background-color: $lightMainColor;
+      }
+    }
+  }
+}
+
+//  Exporting Vars to react components
+:export {
+  mainColor: $mainColor;
+  secondaryColor: $secondaryColor;
+  successColor: $successColor;
+  errorColor: $errorColor;
+}

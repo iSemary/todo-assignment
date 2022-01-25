@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./assets/App.css";
+import 'izitoast/dist/css/iziToast.min.css';
 
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Welcome from "./Components/Views/Welcome";
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
