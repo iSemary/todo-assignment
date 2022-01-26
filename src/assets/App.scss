@@ -25,7 +25,7 @@ table {
 
     tr {
       th {
-        font-weight: 100 !important;
+        font-weight: bold !important;
         padding: 15px 30px;
       }
     }
@@ -41,10 +41,6 @@ table {
   }
 }
 
-.widly-th {
-  padding: 20px;
-    background-color: #fff;
-}
 //  Exporting Vars to react components
 :export {
   mainColor: $mainColor;
