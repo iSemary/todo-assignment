@@ -41,10 +41,15 @@ table {
   }
 }
 
+.widly-th {
+  padding: 20px;
+    background-color: #fff;
+}
 //  Exporting Vars to react components
 :export {
   mainColor: $mainColor;
   secondaryColor: $secondaryColor;
   successColor: $successColor;
   errorColor: $errorColor;
+  lightMainColor: $lightMainColor;
 }
